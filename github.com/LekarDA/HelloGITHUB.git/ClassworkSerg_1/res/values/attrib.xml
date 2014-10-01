@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable 
+        name="ABBButton">
+        <attr name="direction"
+            format ="enum">
+            <enum name="LEFTTORIGHT" value="0"/>
+            <enum name="RIGHTTOLEFT" value="1"/>
+            </attr>
+        
+        </declare-styleable>
+</resources>
