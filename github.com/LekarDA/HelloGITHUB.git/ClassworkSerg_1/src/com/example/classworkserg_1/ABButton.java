@@ -11,11 +11,11 @@ public class ABButton extends ListView implements myinterface {
 private Dirrection mDirrection;
 	
  public  ABButton(Context context) {
-	this(context,null);
+	super(context);
 
 }
 public ABButton(Context context, AttributeSet attrs) {
-	this(context, attrs,0);
+	super(context, attrs);
 	
 }
 

@@ -7,12 +7,12 @@ import android.widget.Button;
 public class ABList extends Button implements myinterface {
 
 public ABList(Context context) {
-		this(context,null);
+		super(context);
 		
 	}
 
 public ABList(Context context, AttributeSet attrs) {
-	this(context, attrs,0);
+	super(context, attrs);
 	// TODO Auto-generated constructor stub
 }
 
