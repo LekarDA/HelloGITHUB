@@ -8,20 +8,22 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
-public class MainActivity extends Activity implements OnClickListener {
-	Button button1;
-	Button button2;
-	Button button3;
+public class MainActivity extends Activity implements OnTouchListener {
+	ABButton button1;
+	ABButton button2;
+	ABButton button3;
 	ArrayAdapter<String> adapter;
-	ListView listView;
+	ABList listView;
 	ArrayList<String> data;
 	
 	String [] names={"Дима","Жека","Вася","Сережа","Глеб","Артём","Григорий","eric","NIck","Emma","Bob"};
@@ -31,14 +33,14 @@ public class MainActivity extends Activity implements OnClickListener {
 		setContentView(R.layout.activity_main);
 		data=new ArrayList<String>();
 		adapter=new ArrayAdapter<String>(this,R.layout.item,names);
-		listView=(ListView)findViewById(R.id.listView1);
+		listView=(ABList)findViewById(R.id.listView1);
 		listView.setAdapter(adapter);
-		button1=(Button)findViewById(R.id.button1);
-		button2=(Button)findViewById(R.id.button2);
-		button3=(Button)findViewById(R.id.button3);
-		button1.setOnClickListener(this);
-		button2.setOnClickListener(this);
-		button3.setOnClickListener(this);
+		button1=(ABButton)findViewById(R.id.button1);
+		button2=(ABButton)findViewById(R.id.button2);
+		button3=(ABButton)findViewById(R.id.button3);
+		button1.setOnTouchListener(new ListListener());
+		button2.setOnTouchListener(new ListListener());
+		button3.setOnTouchListener(new ListListener());
 		listView.setOnTouchListener(new ListListener());
 	}
 
@@ -62,18 +64,13 @@ public class MainActivity extends Activity implements OnClickListener {
 		return super.onOptionsItemSelected(item);
 	}
 
-
 	@Override
-	public void onClick(View v) {
-		switch (v.getId()) {
-		case R.id.button1:
-			
-			break;
-
-		default:
-			break;
-		}
-		
+	public boolean onTouch(View v, MotionEvent event) {
+		// TODO Auto-generated method stub
+		return false;
 	}
+
+
+	
 
 }
