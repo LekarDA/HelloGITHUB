@@ -8,7 +8,7 @@ import android.widget.Button;
 public class ABButton extends Button implements myinterface {
 	
 
-private Dirrection  mDirrection;
+private Dirrection mDirrection;
 	
  public  ABButton(Context context) {
 	super(context);
