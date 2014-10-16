@@ -22,6 +22,7 @@ public class SecondFragment extends Fragment implements OnClickListener {
 		cancenable=rootView.findViewById(R.id.view1);
 		cancenable.setOnClickListener(this);
 		//image.setOnClickListener(this); прописать код для дрыгания
+	//jgjkhnjvhk
 		return rootView;
 	}
 	public static SecondFragment newInstance(int ImageResourcesId) {
