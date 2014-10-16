@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.homeworkserg_1_2.MainActivity" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+    <item
+        android:id="@+id/action_oneImage"
+        android:icon="@drawable/ic_action_picture"
+        android:showAsAction="never"
+        android:title="@string/actionButtonOne"/>
+    <item
+        android:id="@+id/action_3x3Image"
+        android:icon="@drawable/ic_action_group"
+        android:showAsAction="always"
+        android:title="@string/actionButtonFour"/>
+    <item
+        android:id="@+id/action_4x4Image"
+        android:icon="@drawable/ic_action_view_as_grid"
+        android:showAsAction="always"
+        android:title="@string/actionButtonFour"/>
+
+</menu>
